@@ -1,0 +1,40 @@
+/*
+	Comment
+*/
+
+a { /* Comment */ color: /* Comment */ Red; }
+
+body {
+	background: DarkGreen;
+	color: white;
+	font-family: monospace;
+}
+
+h1 {
+	font-size:100px;
+	text-align: center;
+	
+	
+}
+
+p { 
+	color: white;
+	font-size:20px;
+	font-family: monospace;
+
+}
+
+.logo1 {
+	align: top, left;
+	
+	
+	
+	
+}
+
+.button1 {
+	align-co: right;
+	
+	
+	
+}
