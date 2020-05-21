@@ -33,8 +33,45 @@ p {
 }
 
 .button1 {
-	align-co: right;
+  
+  color: white;
+  text-decoration: none;
+  font-family: monospace;
+  background-color: Green;
+  border-width: 4px;
+  border-style: solid;
+  border-radius: 8px;
+  outline-width:100px;
+  font-size:40px;
+  
+ }
+ 
+ .LogInButton {
+ 	
+	float: right;
+	text-align: right; 
+	 color: white;
+  text-decoration: none;
+  font-family: monospace;
+  background-color: Green;
+  border-width: 2px;
+ border-style: solid;
+
+  outline-width:100px;
+  font-size:20px;
+	
+ }
+ 
+ 
+ form {
+ 	text-align: center;
+	float: center;
+
+
 	
 	
 	
-}
+	
+ }
+  
+  
