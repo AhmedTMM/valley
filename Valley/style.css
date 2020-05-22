@@ -13,11 +13,11 @@ body {
 h1 {
 	font-size:100px;
 	text-align: center;
-
-
+	
+	
 }
 
-p {
+.p { 
 	color: white;
 	font-size:20px;
 	font-family: monospace;
@@ -26,50 +26,71 @@ p {
 
 .logo1 {
 	align: top, left;
-
-
-
-
+	
+	
+	
+	
 }
 
 .button1 {
-
+  
   color: white;
   text-decoration: none;
   font-family: monospace;
-  background-color: DarkBlue;
+  background-color: Green;
   border-width: 4px;
   border-style: solid;
   border-radius: 8px;
   outline-width:100px;
   font-size:40px;
-
+  
  }
-
+ 
  .LogInButton {
-
+ 	
 	float: right;
-	text-align: right;
-	 color: white;
+	text-align: right; 
+	 color: black;
   text-decoration: none;
   font-family: monospace;
-  background-color: DarkBlue;
-  border-width: 2px;
+  background-color: LightGray;
+  border-width: 0.5px;
  border-style: solid;
+
+
+
+opacity: 0.5;
 
   outline-width:100px;
   font-size:20px;
-
+	
  }
-
-
+ 
+ 
  form {
  	text-align: center;
 	float: center;
 
 
-
-
-
-
+	
+	
+	
+	
  }
+ 
+ .news {
+ 	
+	background: white;
+	font-family: Monospace;
+	font-size:15px;
+	color: black;
+	border-style: solid;
+	font-weight: bold;
+	
+	
+
+	
+	
+	
+ }
+ 
