@@ -17,7 +17,7 @@ h1 {
 	
 }
 
-p { 
+.p { 
 	color: white;
 	font-size:20px;
 	font-family: monospace;
@@ -50,12 +50,16 @@ p {
  	
 	float: right;
 	text-align: right; 
-	 color: white;
+	 color: black;
   text-decoration: none;
   font-family: monospace;
-  background-color: Green;
-  border-width: 2px;
+  background-color: LightGray;
+  border-width: 0.5px;
  border-style: solid;
+
+
+
+opacity: 0.5;
 
   outline-width:100px;
   font-size:20px;
@@ -73,5 +77,20 @@ p {
 	
 	
  }
-  
-  
+ 
+ .news {
+ 	
+	background: white;
+	font-family: Monospace;
+	font-size:15px;
+	color: black;
+	border-style: solid;
+	font-weight: bold;
+	
+	
+
+	
+	
+	
+ }
+ 
