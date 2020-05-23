@@ -25,7 +25,7 @@ h1 {
 }
 
 .logo1 {
-	align: top, left;
+	float: top, left;
 	
 	
 	
@@ -65,11 +65,12 @@ opacity: 0.5;
   font-size:20px;
 	
  }
- 
+
  
  form {
  	text-align: center;
 	float: center;
+	font-family: monospace;
 
 
 	
@@ -92,5 +93,30 @@ opacity: 0.5;
 	
 	
 	
+ }
+
+
+/* Import google fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+
+.form-div {
+
+margin: 50px auto 50px;
+padding: 25px 15px 10px 15px;
+border: 1px solid #80ced7;
+border-radius: 5px;
+font-size: 1.1em;
+font-family: "Lora", serif;
+
+ }
+
+
+ .form-control:focus {
+
+box-shadow: none;
+
+
+
  }
  
