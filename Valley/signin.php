@@ -1,8 +1,7 @@
 <?php $fname = "j";
 $lname = "h";
-?>
-Welcome <?php echo $_POST["fname"]; ?><br>
-Your Password is: <?php echo $_POST["lname"]; ?>
-<?php
+
+Welcome echo $_POST["fname"]; <br>
+Your Password is: echo $_POST["lname"]; 
 echo $lname;
 ?>

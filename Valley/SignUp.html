@@ -44,48 +44,54 @@
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
 }
-	</style>
+	</style>	
 	<title>Valley</title>
 	<link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div id="mySidenav" class="sidenav">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-
+  
   <! tabs >
-
+  
   <a href="Valley.html">Valley</a>
   <a href="Maps.html">Maps</a>
   <a href="https://earth.google.com/earth/rpc/cc/drive?state=%7B%22ids%22%3A%5B%221gsb5ltx3DxyX4VF7UQukZcJnxFBSr0lf%22%5D%2C%22action%22%3A%22open%22%2C%22userId%22%3A%22115168549982821896991%22%7D&usp=sharing">Map</a>
-
+  
   <! end >
-
+  
     </div>
 	<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
 
 <script>
-function openNav() {
+function openNav() {     
   document.getElementById("mySidenav").style.width = "250px";
 }
 
 function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
 }
-</script>
+</script>      
 
 <! actual end >
 </head>
 <body>
 
+
+
 <form action="/action_page.php">
+  <label for="fname">First Name:</label><br>
+  <input type="fname" id="fname" name="fname" value=""><br>
   <label for="username">Username:</label><br>
   <input type="username" id="fname" name="fname" value=""><br>
   <label for="password">Password:</label><br>
   <input type="password" id="lname" name="lname" value=""><br><br>
   <label for="key">Authorization Key:</label><br>
   <input type="key" id="lname" name="lname" value=""><br><br>
-  <input type="submit" value="Submitsignin" action="/signup.html" method="post" target="_blank">
+  <input type="submit" value="Submit">
 </form>
+
+
 
 
 
