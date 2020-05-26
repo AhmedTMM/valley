@@ -1,3 +1,5 @@
+
+<?php require_once 'controllers/authController.php'; ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -18,18 +20,21 @@
         <form action="signup.php" method="post">
         <h3 class="text-center">Register</h3>
 
-     <!--   <div class="alert alert-danger">
-        <li>Username required</li>
 
-
+    <?php if (count($errors) > 0): ?>
+        <div class="alert alert-danger">
+            <?php foreach($errors as $error): ?>
+                <li><?php echo $error; ?></li>
+            <?php endforeach; ?>
         </div> 
+    <?php endif; ?>
 
-      for later                 -->
+              
 
 
         <div class="form-group">
-        <label for="username">Username        </label>
-        <input type="text" name="username" class="form-control-lg">
+        <label for="username">Username</label>
+        <input type="text" name="username" value="<?php echo $username; ?>" class="form-control-lg">
         </div>
         <div class="form-group">
         <label for="password">Password        </label>
@@ -44,7 +49,11 @@
          <div class="form-group">
         <button type="submit" name="signup_btn" class="btn btn-primary btn-block btn-lg">Sign Up</button>
         </div>  
-
+         
+        <div class="alert alert-success">
+        <p>Make sure that you provided all of the information necessary or account creation won't work</p>      
+            </div>
+       
         <p class="text-center">Already a Member? <a class="LogInButton" href="login.php">Log In</a></p>
 
 
