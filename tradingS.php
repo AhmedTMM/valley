@@ -104,26 +104,46 @@ function closeNav() {
 			
 			<div>
 				
-				<h1>title</h1>
+				<h1>Valley</h1>
 				<a href="profile.php"><i class="fas fa-user-circle"></i><?=$_SESSION['name']?></a>
 				<a href="logout.php"><i class="fas fa-sign-out-alt"></i>Logout</a>
 			</div>
 		</nav>
 		<div class="content">
-			<h2>title</h2>
+			<h2>How to trade</h2>
 			
 			
 			
 
 		</div>
 
-		<!-- copy paste above for template -->
+		<div class="content">
 
    <p>
-
-
+    This page may be really long but trading isn't actually that complicated. First of all, to trade with someone else,
+    go to the trading page. There you can find all of the trades people have set up. Message the seller on any message service, 
+    including Valley if we can figure out the messaging system. 
    </p>
 
+
+    <img src="trade.png" alt="Create trade" style="width:500px; height:300px; margin-left: auto; margin-right: auto; display: block; ">
+
+   <p>
+    Now, I will teach you how to create a trade. To create a trade, click on the trade button at the top right of the trading
+    page. It has a plus button next to it. After that, a form will appear. Fill out this form completely. Otherwise, the trade creation will not
+    work. The price part is the amount of Valleycoin that you want for the object you are selling. Alternatitivley, you could 
+    set the price as 0, and specify another object you want in the description. The trade center is where 
+    you will trade. Only trade at those locations. 
+   </p>
+
+
+
+
+
+
+
+
+</div>
 
 	</body>
 </html>

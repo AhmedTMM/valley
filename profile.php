@@ -6,20 +6,23 @@ if (!isset($_SESSION['loggedin'])) {
 	header('Location: index.html');
 	exit;
 }
-$DATABASE_HOST = 'localhost';
-$DATABASE_USER = 'root';
-$DATABASE_PASS = 'root';
-$DATABASE_NAME = 'phplogin';
+require 'config/constants.php';
 $con = mysqli_connect($DATABASE_HOST, $DATABASE_USER, $DATABASE_PASS, $DATABASE_NAME);
 if (mysqli_connect_errno()) {
 	exit('Failed to connect to MySQL: ' . mysqli_connect_error());
 }
 // We don't have the password or email info stored in sessions so instead we can get the results from the database.
 $stmt = $con->prepare('SELECT password, text FROM accounts WHERE id = ?');
+$stmt = $con->prepare('SELECT money, text FROM accounts WHERE id = ?');
 // In this case we can use the account ID to get the account info.
 $stmt->bind_param('i', $_SESSION['id']);
 $stmt->execute();
-$stmt->bind_result($password, $text);
+$stmt->bind_result($money, $text);
+
+
+
+
+
 $stmt->fetch();
 $stmt->close();
 ?>
@@ -86,6 +89,8 @@ $stmt->close();
     <a href="home.php">Valley</a>
   <a href="maps.php">Maps</a>
   <a href="news.php">News</a>
+  <a href="profile.php">My Profile</a>
+  <a href="trading.php">Trading</a>
  
   
   <! end >
@@ -113,8 +118,9 @@ function closeNav() {
 	<body class="loggedin">
 		<nav class="navtop">
 			<div>
+				
 				<h1>Valley</h1>
-				<a href="profile.php"><i class="fas fa-user-circle"></i>Profile</a>
+				<a href="profile.php"><i class="fas fa-user-circle"></i><?=$_SESSION['name']?></a>
 				<a href="logout.php"><i class="fas fa-sign-out-alt"></i>Logout</a>
 			</div>
 		</nav>
@@ -127,15 +133,19 @@ function closeNav() {
 						<td>Username:</td>
 						<td><?=$_SESSION['name']?></td>
 					</tr>
+
+					<p> You can still login with unencrypted password </p>
+
+
 					<tr>
-						<td>Password (encrypted):</td>
-						<td><?=$password?></td>
+						<td>Valleycoin:</td>
+						<td><?=$money?></td>
 					</tr>
 
 					
 				</table>
 
-				<p> You can still login with unencrypted password </p>
+				
 			</div>
 		</div>
 	</body>

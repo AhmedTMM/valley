@@ -104,25 +104,38 @@ function closeNav() {
 			
 			<div>
 				
-				<h1>title</h1>
+                <h1>Valley</h1>
+
+                <a href="tradingS.php"><i class="fas fa-question"></i>Trading help</a>
+                <a href="tCreate.php"><i class="fas fa-plus"></i>Trade</a>
 				<a href="profile.php"><i class="fas fa-user-circle"></i><?=$_SESSION['name']?></a>
-				<a href="logout.php"><i class="fas fa-sign-out-alt"></i>Logout</a>
+                <a href="logout.php"><i class="fas fa-sign-out-alt"></i>Logout</a>
+                
 			</div>
 		</nav>
 		<div class="content">
-			<h2>title</h2>
+      <h2>Trading</h2> 
+      
+      
+  
 			
-			
-			
 
-		</div>
-
-		<!-- copy paste above for template -->
-
-   <p>
+    </div>
+    
 
 
-   </p>
+   
+
+
+
+
+
+
+        
+
+
+
+
 
 
 	</body>

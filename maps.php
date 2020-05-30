@@ -68,9 +68,11 @@ if (!isset($_SESSION['loggedin'])) {
   
    <! tabs >
    
-    <a href="home.php">Valley</a>
+   <a href="home.php">Valley</a>
   <a href="maps.php">Maps</a>
   <a href="news.php">News</a>
+  <a href="profile.php">My Profile</a>
+  <a href="trading.php">Trading</a>
  
   
   <! end >

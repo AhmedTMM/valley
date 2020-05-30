@@ -43,6 +43,17 @@ body {
     margin-bottom: 20px;
     padding: 0 15px;
 }
+
+.login form textarea[name="desc"] {
+
+    width: 310px;
+    height: 200px;
+    border: 1px solid #dee0e4;
+    margin-bottom: 20px;
+    padding: 0 15px;
+}
+
+
 .login form input[type="submit"] {
     width: 100%;
     padding: 15px;
@@ -186,7 +197,7 @@ body {
     transition: background-color 0.2s;
 }
 .register form input[type="submit"]:hover {
-  background-color: #2868c7;
+  background-color: #147a2e;
     transition: background-color 0.2s;
 }
 
@@ -229,3 +240,17 @@ body {
 	
 	
  }
+
+ .plusbutton {
+font-size: 100px;
+width: 100px;
+height: 100px;
+
+
+ }
+
+
+
+
+
+

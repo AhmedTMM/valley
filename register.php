@@ -42,6 +42,7 @@ if ($stmt = $con->prepare('SELECT id, password FROM accounts WHERE username = ?'
 if ($stmt = $con->prepare('INSERT INTO accounts (username, password, text) VALUES (?, ?, ?)')) {
 	// We do not want to expose passwords in our database, so hash the password and use password_verify when a user logs in.
 	$password = password_hash($_POST['password'], PASSWORD_DEFAULT);
+	
 	$stmt->bind_param('sss', $_POST['username'], $password, $_POST['text']);
 	$stmt->execute();
 	echo 'You have successfully registered, you can now login!';
