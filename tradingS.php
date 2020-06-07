@@ -73,6 +73,8 @@ if (!isset($_SESSION['loggedin'])) {
   <a href="news.php">News</a>
   <a href="profile.php">My Profile</a>
   <a href="trading.php">Trading</a>
+  <a href="clans.php">Clans</a>
+  <a href="chat.php">Chat</a>
  
   
   <! end >
@@ -119,24 +121,38 @@ function closeNav() {
 
 		<div class="content">
 
-   <p>
-    This page may be really long but trading isn't actually that complicated. First of all, to trade with someone else,
-    go to the trading page. There you can find all of the trades people have set up. Message the seller on any message service, 
-    including Valley if we can figure out the messaging system. 
-   </p>
+<p> To make a trade, it's pretty simple. Click on +Trade at the top right. That will take you 
+  to the trading chat room for the valley. Press no to notifications, and then scroll down and 
+  press join room. Once again, the password for all chat rooms is 'ValleyChat'. Enter it, then you 
+  can trade. To create a trade, type in chat what item you're selling, how much Valleycoin or what item 
+  you want in return, a image link to a image of your item, (tutorial on how to shorten image links below) 
+  and a description of the item. You also have to add where you will be selling the item, and what time.
+  The trade center MUST be one of the following places: Basking Ridge Park, Piercy Park, or the 
+  Coyote Creek Life Cycles Trailhead. Don't trade anywhere else for safety reasons. The time must be 
+  only between 8:00 AM and 8:00 PM. 
+
+</p>
+
+<p> To trade with someone who has made a trade, all you have to do is direct message them. (check your messages frequently
+  By the way, a full tutorial on how to use the chat system is on another page. The direct message will contain
+  a image link (only if you're giving a item not valleycoin) to the item you will trade back. Otherwise, 
+  say how much valleycoin you will spend. This is to confirm that you know how much you're spending. 
+  The seller may change the price if they wish. Other than that, you can discuss how you can trade and at what time 
+  and all that. 
+
+</p>
+
+<h2>How to shorten image links and get image links</h2>
 
 
-    <img src="trade.png" alt="Create trade" style="width:500px; height:300px; margin-left: auto; margin-right: auto; display: block; ">
-
-   <p>
-    Now, I will teach you how to create a trade. To create a trade, click on the trade button at the top right of the trading
-    page. It has a plus button next to it. After that, a form will appear. Fill out this form completely. Otherwise, the trade creation will not
-    work. The price part is the amount of Valleycoin that you want for the object you are selling. Alternatitivley, you could 
-    set the price as 0, and specify another object you want in the description. The trade center is where 
-    you will trade. Only trade at those locations. 
-   </p>
-
-
+<p>To get a image link for your image, you can download the Google Drive app on your phone. Then, take or upload 
+  a picture of what you want to turn into a link. Then, you can go onto a computer (or use your phone) 
+  Then, you can open the image in google drive. You can get a sharable link by clicking the share button and then 
+  clicking 'get sharable link' Change it to anyone with this link can view, and paste your link on wherever it needs 
+  to be. This allows anyone with the link you provided to see the image you uploaded. Alternatively, you can 
+  register a email and password to the chat system, where then you can upload photos without using a link.
+  
+</p>
 
 
 

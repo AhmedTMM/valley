@@ -73,6 +73,7 @@ if (!isset($_SESSION['loggedin'])) {
   <a href="news.php">News</a>
   <a href="profile.php">My Profile</a>
   <a href="trading.php">Trading</a>
+  <a href="clans.php">Clans</a>
  
   
   <! end >

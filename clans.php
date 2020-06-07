@@ -67,7 +67,7 @@ if (!isset($_SESSION['loggedin'])) {
 
   
    <! tabs >
-   
+
    <a href="home.php">Valley</a>
   <a href="maps.php">Maps</a>
   <a href="news.php">News</a>
@@ -75,6 +75,8 @@ if (!isset($_SESSION['loggedin'])) {
   <a href="trading.php">Trading</a>
   <a href="clans.php">Clans</a>
   <a href="chat.php">Chat</a>
+  
+ 
   
   <! end >
   
@@ -107,15 +109,16 @@ function closeNav() {
 				
                 <h1>Valley</h1>
 
-                <a href="tradingS.php"><i class="fas fa-question"></i>Trading help</a>
-                <a href="https://y99.in/r/162899"><i class="fas fa-plus"></i>Trade</a>
+                <a href="clanh.php"><i class="fas fa-question"></i>Clan Help</a>
+                <a href="joinc.php"><i class="fas fa-sign-in-alt"></i>Join Clan</a>
+                <a href="nclan.php"><i class="fas fa-plus"></i>New clan</a>
 				<a href="profile.php"><i class="fas fa-user-circle"></i><?=$_SESSION['name']?></a>
                 <a href="logout.php"><i class="fas fa-sign-out-alt"></i>Logout</a>
                 
 			</div>
 		</nav>
 		<div class="content">
-      <h2>Trading</h2> 
+      <h2>Clans</h2> 
       
       
   

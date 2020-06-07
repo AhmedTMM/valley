@@ -73,7 +73,8 @@ if (!isset($_SESSION['loggedin'])) {
   <a href="news.php">News</a>
   <a href="profile.php">My Profile</a>
   <a href="trading.php">Trading</a>
- 
+  <a href="clans.php">Clans</a>
+  <a href="chat.php">Chat</a>
   
   <! end >
   
@@ -118,6 +119,20 @@ function closeNav() {
 		</div>
 
 		<!-- copy paste above for template -->
+
+
+
+    <div class="content">
+
+<h4>  6/5/2020 11:58 AM PST Friday </h4>
+   <p>
+ 
+   Clan system and chat system added/being worked on. 
+   </p>
+
+</div>
+
+
 
 
 <div class="content">

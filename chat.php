@@ -11,6 +11,8 @@ if (!isset($_SESSION['loggedin'])) {
 <!DOCTYPE html>
 <html>
 	<head>
+  
+
 
    <!-- start -->
 
@@ -75,6 +77,7 @@ if (!isset($_SESSION['loggedin'])) {
   <a href="trading.php">Trading</a>
   <a href="clans.php">Clans</a>
   <a href="chat.php">Chat</a>
+ 
   
   <! end >
   
@@ -95,7 +98,7 @@ function closeNav() {
 
 		
 		<meta charset="utf-8">
-		<title>title</title>
+		<title>Home Page</title>
 		<link href="style.css" rel="stylesheet" type="text/css">
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
 	</head>
@@ -106,38 +109,36 @@ function closeNav() {
 			<div>
 				
                 <h1>Valley</h1>
-
-                <a href="tradingS.php"><i class="fas fa-question"></i>Trading help</a>
-                <a href="https://y99.in/r/162899"><i class="fas fa-plus"></i>Trade</a>
+                <a href="chats.php"><i class="fas fa-comment-dots"></i>Chats</a>
 				<a href="profile.php"><i class="fas fa-user-circle"></i><?=$_SESSION['name']?></a>
-                <a href="logout.php"><i class="fas fa-sign-out-alt"></i>Logout</a>
-                
+				<a href="logout.php"><i class="fas fa-sign-out-alt"></i>Logout</a>
 			</div>
 		</nav>
 		<div class="content">
-      <h2>Trading</h2> 
-      
-      
-  
+			<h2>About</h2>
+			
+			
 			
 
-    </div>
-    
+		</div>
+
+		<!-- copy paste above for template -->
+
+		<div class="content">
+
+   <p> The chat uses a different website called yesichat or something. Anyway go to the link below. It 
+       will take you to the site. Enter your name and after that add __.V or something similar.
+       This is to allow people to actually get their name without saying it's taken. So set your name 
+       as something like Tyler__.V You can choose to 
+       register your email or not. The reason why we're using this is so that you don't have to 
+       register a email and it doesn't have a high age rating like discord. Chats are listed in the top right corner.
+       -READ ITS IMPORTANT-
+       If you don't register a email and passoword, make sure you don't press log out on the chat website. 
+
+   </p>
 
 
-   
-
-
-
-
-
-
-        
-
-
-
-
-
+</div>
 
 	</body>
 </html>

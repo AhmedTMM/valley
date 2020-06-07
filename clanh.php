@@ -75,6 +75,7 @@ if (!isset($_SESSION['loggedin'])) {
   <a href="trading.php">Trading</a>
   <a href="clans.php">Clans</a>
   <a href="chat.php">Chat</a>
+ 
   
   <! end >
   
@@ -105,39 +106,52 @@ function closeNav() {
 			
 			<div>
 				
-                <h1>Valley</h1>
-
-                <a href="tradingS.php"><i class="fas fa-question"></i>Trading help</a>
-                <a href="https://y99.in/r/162899"><i class="fas fa-plus"></i>Trade</a>
+				<h1>Valley</h1>
 				<a href="profile.php"><i class="fas fa-user-circle"></i><?=$_SESSION['name']?></a>
-                <a href="logout.php"><i class="fas fa-sign-out-alt"></i>Logout</a>
-                
+				<a href="logout.php"><i class="fas fa-sign-out-alt"></i>Logout</a>
 			</div>
 		</nav>
 		<div class="content">
-      <h2>Trading</h2> 
-      
-      
-  
+			<h2>How to trade</h2>
+			
+			
 			
 
-    </div>
+		</div>
+
+		<div class="content">
+
+   <p>
+    Clans are groups in the valley which has it's own government system and other things. If you're not
+    in any clan, you're called a Nomad, which means you're not part of any clan. You can still gain
+    money and have a base, but you can't really claim your own territory. To join a clan, go to the clans page to 
+    send a request to join one. (on the top right) To create one, listen to the next paragraph. Your clan leader decides 
+    the rules and ranks and the rest of the desicions for your clan. You might be able 
+    to get a higher rank and make some clan descisions for yourself. Or, you can start your own clan.
+    You can get kicked from a clan. If you join a clan that doesn't exist, it will either not work 
+    or you will be removed from the clan depending on if I can get that to work. 
+   </p>
+
+
     
 
-
-   
-
-
-
-
-
-
-        
-
+   <p>
+    To start your own clan, navigate to the clans page. Click on new clan in the top right corner. It will 
+    redirect you to the clan creation form. Fill out the form in full. The clan name part is the name of your clan. 
+    The abbreviation part is what will be displayed next to your username. So do something like VR if your clan 
+    is called the Valley Republic or something like that. The description is there so you can describe your clan. 
+    The flag image link is there so you can add your flag. This is required as it is used to mark your 
+    territory. You can contact a moderator to get a unwanted account removed from your clan. 
+   </p>
 
 
 
 
+
+
+
+
+</div>
 
 	</body>
 </html>
