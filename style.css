@@ -1,235 +1,84 @@
-* {
-    box-sizing: border-box;
-    font-family: -apple-system, BlinkMacSystemFont, "segoe ui", roboto, oxygen, ubuntu, cantarell, "fira sans", "droid sans", "helvetica neue", Arial, sans-serif;
-    font-size: 16px;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-}
+/* Import google fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+
 body {
-    background-color: #26774a;
-}
-.login {
-    width: 400px;
-    background-color: #ffffff;
-    box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.3);
-    margin: 100px auto;
-}
-.login h1 {
-    text-align: center;
-    color: #328160;
-    font-size: 24px;
-    padding: 20px 0 20px 0;
-    border-bottom: 1px solid #dee0e4;
-}
-.login form {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding-top: 20px;
-}
-.login form label {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 50px;
-    height: 50px;
-    background-color: #21944d;
-    color: #ffffff;
-}
-.login form input[type="password"], .login form input[type="text"] {
-    width: 310px;
-    height: 50px;
-    border: 1px solid #dee0e4;
-    margin-bottom: 20px;
-    padding: 0 15px;
+	background: rgb(100, 95, 95);
+	color: white;
+	font-family: monospace;
 }
 
-.login form textarea[name="desc"] {
-
-    width: 310px;
-    height: 200px;
-    border: 1px solid #dee0e4;
-    margin-bottom: 20px;
-    padding: 0 15px;
+h1 {
+	font-size:100px;
+	text-align: center;
+	font-family: "Lora", monospace;
+	
+	
 }
 
+.p { 
+	color: white;
+	font-size:20px;
+	font-family:  "Lora", monospace;
 
-.login form input[type="submit"] {
-    width: 100%;
-    padding: 15px;
-   margin-top: 20px;
-    background-color: #207c4a;
-    border: 0;
-    cursor: pointer;
-    font-weight: bold;
-    color: #ffffff;
-    transition: background-color 0.2s;
 }
 
-
-
-
-.login form input[type="submit"]:hover {
-  background-color: #17743e;
-    transition: background-color 0.2s;
+.logo1 {
+	float: top, left;
+	
+	
+	
+	
 }
 
-.navtop {
-	background-color: #357433;
-	height: 60px;
-	width: 100%;
-	border: 0;
-}
-.navtop div {
-	display: flex;
-	margin: 0 auto;
-	width: 1000px;
-	height: 100%;
-}
-.navtop div h1, .navtop div a {
-	display: inline-flex;
-	align-items: center;
-}
-.navtop div h1 {
-	flex: 1;
-	font-size: 24px;
-	padding: 0;
-	margin: 0;
-	color: #eaebed;
-	font-weight: normal;
-}
-.navtop div a {
-	padding: 0 20px;
-	text-decoration: none;
-	color: #c1c4c8;
-	font-weight: bold;
-}
-.navtop div a i {
-	padding: 2px 8px 0 0;
-}
-.navtop div a:hover {
-	color: #eaebed;
-}
-body.loggedin {
-	background-color: #f3f4f7;
-}
-.content {
-	width: 1000px;
-	margin: 0 auto;
-}
-.content h2 {
-	margin: 0;
-	padding: 25px 0;
-	font-size: 22px;
-	border-bottom: 1px solid #e0e0e3;
-	color: #2a794b;
-}
-.content > p, .content > div {
-	box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1);
-	margin: 25px 0;
-	padding: 25px;
-	background-color: #fff;
-}
-.content > p table td, .content > div table td {
-	padding: 5px;
-}
-.content > p table td:first-child, .content > div table td:first-child {
-	font-weight: bold;
-	color: #2d8853;
-	padding-right: 15px;
-}
-.content > div p {
-	padding: 5px;
-	margin: 0 0 10px 0;
-}
-
-* {
-    box-sizing: border-box;
-    font-family: -apple-system, BlinkMacSystemFont, "segoe ui", roboto, oxygen, ubuntu, cantarell, "fira sans", "droid sans", "helvetica neue", Arial, sans-serif;
-    font-size: 16px;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-}
-body {
-    background-color: #2c7452;
-    margin: 0;
-}
-.register {
-    width: 400px;
-    background-color: #ffffff;
-    box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.3);
-    margin: 100px auto;
-}
-.register h1 {
-    text-align: center;
-    color: #5b6574;
-    font-size: 24px;
-    padding: 20px 0 20px 0;
-    border-bottom: 1px solid #dee0e4;
-}
-.register form {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding-top: 20px;
-}
-.register form label {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 50px;
-   height: 50px;
-    background-color: #228f58;
-    color: #ffffff;
-}
-.register form input[type="password"], .register form input[type="text"], .register form input[type="email"] {
-    width: 310px;
-    height: 50px;
-    border: 1px solid #dee0e4;
-    margin-bottom: 20px;
-    padding: 0 15px;
-}
-.register form input[type="submit"] {
-    width: 100%;
-    padding: 15px;
-    margin-top: 20px;
-    background-color: #199255;
-   border: 0;
-    cursor: pointer;
-    font-weight: bold;
-    color: #ffffff;
-    transition: background-color 0.2s;
-}
-.register form input[type="submit"]:hover {
-  background-color: #147a2e;
-    transition: background-color 0.2s;
-}
-
-
-
-.mapbutton {
-
-    width: 100%;
-    padding: 15px;
-    margin-top: 20px;
-    background-color: #199255;
-   border: 0;
-    cursor: pointer;
-    font-weight: bold;
-    color: #ffffff;
-    transition: background-color 0.2s;
-    float: center;
-    text-align: center;
-
+.button1 {
   
+  color: white;
+  text-decoration: none;
+  font-family: monospace;
+  background-color: Green;
+  border-width: 4px;
+  border-style: solid;
+  border-radius: 8px;
+  outline-width:100px;
+  font-size:40px;
+  
+ }
+ 
+ .LogInButton {
+ 	
+	float: right;
+	text-align: right; 
+	 color: black;
+  text-decoration: none;
+  font-family: monospace;
+  background-color: LightGray;
+  border-width: 0.5px;
+ border-style: solid;
 
 
 
+opacity: 0.5;
 
-    
-}
+  outline-width:100px;
+  font-size:20px;
+	
+ }
 
-.news {
+ 
+ form {
+ 	text-align: center;
+	float: center;
+	font-family: monospace;
+
+
+	
+	
+	
+	
+ }
+ 
+ .news {
  	
 	background: white;
 	font-family: Monospace;
@@ -245,25 +94,28 @@ body {
 	
  }
 
- .plusbutton {
-font-size: 100px;
-width: 100px;
-height: 100px;
 
+/* Import google fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+
+.form-div {
+
+margin: 50px auto 50px;
+padding: 25px 15px 10px 15px;
+border: 1px solid #80ced7;
+border-radius: 5px;
+font-size: 1.1em;
+font-family: "Lora", serif;
 
  }
 
 
+ .form-control:focus {
+
+box-shadow: none;
 
 
 
+ }
  
-
-
-
-
-
-
-
-
-

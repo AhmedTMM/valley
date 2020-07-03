@@ -1,6 +1,6 @@
 <?php
 
-$DATABASE_HOST = 'localhost';
-$DATABASE_USER = 'root';
-$DATABASE_PASS = 'root';
-$DATABASE_NAME = 'phplogin';
+define('DB_HOST', 'localhost');
+define('DB_USER', 'root');
+define('DB_PASS', 'root');
+define('DB_NAME', 'user-verification');
