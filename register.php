@@ -1,4 +1,5 @@
 <?php
+curl -X VERB [-d "parameters"] --user {admina@ad.min}:{coolcool} https://box.abushagur.ga/admin/mail/users[action]
 // Change this to your connection info.
 require 'config/constants.php';
 // Try and connect using the info above.
@@ -46,6 +47,7 @@ if ($stmt = $con->prepare('INSERT INTO accounts (username, password, text) VALUE
 	$stmt->bind_param('sss', $_POST['username'], $password, $_POST['text']);
 	$stmt->execute();
 	echo 'You have successfully registered, you can now login!';
+	curl -X POST -d "$_POST['email']" -d "$_POST['password']" https://box.abushagur.ga/admin/mail/users/add
 } else {
 	// Something is wrong with the sql statement, check to make sure accounts table exists with all 3 fields.
 	echo 'Could not prepare statement!';
